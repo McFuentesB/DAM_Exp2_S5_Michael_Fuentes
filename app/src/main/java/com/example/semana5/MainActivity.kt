@@ -34,3 +34,4 @@ fun AppScaffold() {
         AppNavGraph(navController = navController)
     }
 }
+

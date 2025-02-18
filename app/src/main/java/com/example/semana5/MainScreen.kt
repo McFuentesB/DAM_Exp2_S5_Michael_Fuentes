@@ -64,6 +64,23 @@ fun MainScreen(navController: NavHostController) {
                     color = Color.White
                 )
             }
+            // Botón para ir a la funcionalidad de LocationScreen
+            Button(
+                onClick = { navController.navigate("location_screen") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(60.dp),
+                shape = RoundedCornerShape(12.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.secondary
+                )
+            ) {
+                Text(
+                    text = "Ubicacion en tiempo real",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = Color.White
+                )
+            }
         }
         // Botón para cerrar sesión
         Button(

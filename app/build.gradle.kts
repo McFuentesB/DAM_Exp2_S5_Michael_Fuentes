@@ -55,6 +55,10 @@ dependencies {
     implementation (libs.androidx.lifecycle.runtime.ktx.v262)
     implementation (libs.androidx.activity.compose.v180)
     implementation(libs.lottie.compose)
+    implementation(libs.play.services.location)
+    implementation(libs.junit.junit)
+    implementation(libs.androidx.junit.ktx)
+    implementation(libs.androidx.ui.test.junit4.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -62,4 +66,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    androidTestImplementation ("androidx.compose.ui:ui-test-junit4:1.3.0")
+    androidTestImplementation ("androidx.compose.ui:ui-test-manifest:1.3.0")
+    testImplementation ("junit:junit:4.13.2")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
 }

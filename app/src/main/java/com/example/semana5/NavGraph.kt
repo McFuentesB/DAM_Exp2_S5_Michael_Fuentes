@@ -18,5 +18,11 @@ fun AppNavGraph(navController: NavHostController) {
         composable("text_to_speech") {TextToSpeechScreen(navController)}
         composable("speech_recognizer") {SpeechRecognizerScreen(navController)}
         composable("about_us") {AboutUsScreen(navController)}
+        composable("location_screen") {
+            val context = androidx.compose.ui.platform.LocalContext.current
+            LocationScreen(context, navController) }
+
+
+
     }
 }
